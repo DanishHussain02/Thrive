@@ -1,0 +1,692 @@
+@font-face {
+    font-family: AnoBold;
+    src: url(font/AnoBold-Regular.otf);
+}
+
+@font-face {
+    font-family: AnoRegular;
+    src: url(font/AnoRegular-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* NAVABAR */
+
+nav {
+    width: 100%;
+    height: 68px;
+}
+
+.thrive-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* HEADER */
+
+header {
+    height: 720px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#group-48 {
+    margin-top: 34%;
+}
+
+.first-title {
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 78px;
+    letter-spacing: -3.6px;
+    color: #414042;
+}
+
+.sec-title {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #414042;
+    mix-blend-mode: normal;
+    margin-bottom: 20px;
+}
+
+#get-thrive-btn {
+    height: 48px;
+    width: 186px;
+    border-radius: 4px;
+    background: #AC9CCB;
+    border: none;
+}
+
+.btn-text {
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+
+/* YOU DESERVE */
+
+.you-deserve {
+    align-self: center;
+    margin-top: 115px;
+}
+
+.primary-title {
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #414042;
+}
+
+.you-deserve-subtitle {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #414042;
+    margin-top: 25px;
+}
+
+
+/* READY FOR BETTER */
+
+.ready-for-better {
+    margin-top: 120px;
+    max-height: 850px;
+}
+
+.btn-group {
+    margin-top: 45px;
+}
+
+.group-btn {
+    width: 180px;
+    height: 40px;
+    background: none;
+    border: solid 2px #AC9CCB;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+    color: #414042;
+}
+
+.selected-group-btn {
+    border-radius: 8px 0px 0px 8px;
+    background-color: #AC9CCB;
+    color: white;
+}
+
+
+/*slider*/
+
+.slider {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.slide_viewer {
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    height: 440px;
+    position: absolute;
+    width: 540px;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide:nth-of-type(1) {
+    background-image: url(img/Base.png);
+}
+
+.slide:nth-of-type(2) {
+    background-image: url(img/Base.png);
+}
+
+.slide:nth-of-type(3) {
+    background-image: url(img/Base.png);
+}
+
+.directional_nav {
+    height: 440px;
+    width: 540px;
+    position: relative;
+    top: -440px;
+}
+
+.previous_btn {
+    bottom: 0;
+    left: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.next_btn {
+    bottom: 0;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.previous_btn,
+.next_btn {
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.previous_btn:hover,
+.next_btn:hover {
+    opacity: 1;
+}
+
+
+/* FINE SLIDER */
+
+.rfb-prim-title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+    color: #414042;
+    padding-top: 60px;
+}
+
+.kickstarter {
+    font-family: AnoBold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+}
+
+.prd-descriptions {
+    font-family: AnoRegular;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    text-align: left;
+    padding-top: 32px;
+}
+
+.little-title {
+    font-family: AnoRegular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.30000001192092896px;
+    text-align: left;
+}
+
+.counter-box {
+    width: 200px;
+    height: 50px;
+    background-color: #EFF2F6;
+    border-radius: 8px;
+    display: inline-flex;
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #18214D;
+}
+
+#minus-btn {
+    width: 50px;
+    border-radius: 8px 0px 0px 8px;
+    height: 50px;
+    background-color: #EFF2F6;
+    border: none;
+}
+
+#ctr-display-es {
+    width: 100px;
+    height: 50px;
+}
+
+#ctr-display {
+    text-align: center;
+    top: 50%;
+    transform: translate(0, 50%);
+}
+
+#plus-btn {
+    width: 50px;
+    border-radius: 0px 8px 8px 0px;
+    height: 50px;
+    background-color: #EFF2F6;
+    border: none;
+}
+
+#strenght {
+    border: 2px solid #DFE4EA;
+    border-radius: 8px;
+    width: 198px;
+    height: 50px;
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    color: #18214D;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+.tot-price {
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+    color: #414042;
+}
+
+.shop-now {
+    height: 50px;
+    width: 198px;
+    border-radius: 8px;
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #AC9CCB;
+    border: none;
+}
+
+
+/* WHY THRIVE*/
+
+.main-why-title {
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -3.6px;
+    color: #414042;
+    margin-top: 50px;
+}
+
+.main-why-subtitle {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #414042;
+    mix-blend-mode: normal;
+}
+
+.list-row {
+    min-height: 134px;
+    margin-top: 40px;
+}
+
+.list-primary {
+    padding-top: 30px;
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: #414042;
+    padding-bottom: 0px;
+}
+
+.list-secondary {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #000000;
+}
+
+
+/*THE THRIVE APPROACH*/
+
+.approach-title {
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    /* identical to box height */
+    letter-spacing: -3.6px;
+    /* Black */
+    color: #414042;
+}
+
+.approach-text {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+    /* or 145% */
+    letter-spacing: -0.4px;
+    /* Black */
+    color: #414042;
+    mix-blend-mode: normal;
+    width: 404px;
+    height: 256px;
+}
+
+.get-thrive-btn-text {
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.355556px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+
+/*Reclaim your health*/
+
+.sec-title-after {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+
+.card-ticket {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    /* Black */
+    color: #414042;
+    padding-top: 32px;
+}
+
+.card-dption {
+    font-family: AnoRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height */
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
+    /* Black */
+    color: #414042;
+}
+
+.shop-all {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 0px 0px 72px;
+    width: 241px;
+    height: 68px;
+    /* P-1 */
+    background: #AC9CCB;
+    border-radius: 4px;
+    font-family: AnoBold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: -0.355556px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 136px;
+}
+
+.logo-box {
+    width: 216px;
+    height: 115px;
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    header {
+        height: 1100px;
+    }
+    .blonde-div {
+        order: 0;
+    }
+    .group-48-class {
+        order: 1;
+    }
+    #group-48 {
+        margin-top: 20%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .blonde-photo {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-top: 30px;
+    }
+    .you-deserve .features .col-6 {
+        margin-top: 60px;
+    }
+    .group-btn {
+        width: 120px;
+        height: 40px;
+        background: none;
+        border: solid 2px #AC9CCB;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 19px;
+        color: #414042;
+    }
+    .selected-group-btn {
+        border-radius: 8px 0px 0px 8px;
+        background-color: #AC9CCB;
+        color: white;
+    }
+    .slider {
+        margin: 0px 0px;
+        max-width: 400px;
+    }
+    .slide_viewer {
+        width: 380px;
+        overflow: hidden;
+        position: relative;
+    }
+    .slide_group {
+        width: 380px;
+        height: 325px;
+        position: relative;
+    }
+    .slide {
+        display: none;
+        width: 380px;
+        height: 100%;
+        position: absolute;
+    }
+    .slide:first-child {
+        display: block;
+    }
+    .slide:nth-of-type(1) {
+        background-image: url(img/Base-mini.png);
+    }
+    .slide:nth-of-type(2) {
+        background-image: url(img/Base-mini.png);
+    }
+    .slide:nth-of-type(3) {
+        background-image: url(img/Base-mini.png);
+    }
+    .directional_nav {
+        width: 380px;
+        height: 325px;
+        position: relative;
+        top: -440px;
+        margin-left: 0px;
+        margin-right: 13px;
+    }
+    .previous_btn {
+        bottom: 0;
+        left: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .next_btn {
+        bottom: 0;
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .previous_btn,
+    .next_btn {
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+        opacity: 0.5;
+        -webkit-transition: opacity 0.4s ease-in-out;
+        -moz-transition: opacity 0.4s ease-in-out;
+        -ms-transition: opacity 0.4s ease-in-out;
+        -o-transition: opacity 0.4s ease-in-out;
+        transition: opacity 0.4s ease-in-out;
+    }
+    .previous_btn:hover,
+    .next_btn:hover {
+        opacity: 1;
+    }
+    .why-thrive {
+        margin-top: 500px;
+    }
+    .parte-slider {
+        max-height: 360px;
+    }
+    .centramento-testo {
+        text-align: center;
+    }
+    .list-row {
+        min-height: 134px;
+        margin-top: 60px;
+    }
+    .necessary-aproach {
+        text-align: center;
+    }
+    .approach-text {
+        font-family: AnoRegular;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 32px;
+        /* or 145% */
+        letter-spacing: -0.4px;
+        /* Black */
+        color: #414042;
+        mix-blend-mode: normal;
+        width: auto;
+        height: auto;
+    }
+    .distanziamento-t {
+        order: 1;
+        margin-top: 60px;
+    }
+    .distanziamento-sopra {
+        margin-top: 30px;
+        order: 0;
+    }
+    .card-reclaim {
+        margin-top: 40px;
+    }
+    .card-collection {
+        text-align: center;
+    }
+}
