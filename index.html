@@ -45,27 +45,27 @@
         <center>
             <p class="primary-title">You deserve better</p>
             <div class="features row">
-                <div class="col-6 col-xl-2 first-line">
+                <div class="col-4 col-xl-2 first-line">
                     <img src="img/premium-hemp.svg" alt="">
                     <h3 class="you-deserve-subtitle">PREMIUM HEMP</h3>
                 </div>
-                <div class="col-6 col-xl-2 first-line">
+                <div class="col-4 col-xl-2 first-line">
                     <img src="img/vegan.svg" alt="">
                     <h3 class="you-deserve-subtitle">VEGAN</h3>
                 </div>
-                <div class="col-6 col-xl-2">
+                <div class="col-4 col-xl-2">
                     <img src="img/org-grown.svg" alt="">
                     <h3 class="you-deserve-subtitle">ORGANICALLY GROWN</h3>
                 </div>
-                <div class="col-6 col-xl-2">
+                <div class="col-4 col-xl-2">
                     <img src="img/lab-tests.svg" alt="">
                     <h3 class="you-deserve-subtitle">LAB TESTED</h3>
                 </div>
-                <div class="col-6 col-xl-2">
+                <div class="col-4 col-xl-2">
                     <img src="img/thc.svg" alt="">
                     <h3 class="you-deserve-subtitle">THC FREE</h3>
                 </div>
-                <div class="col-6 col-xl-2">
+                <div class="col-4 col-xl-2">
                     <img src="img/gluten-free.svg" alt="">
                     <h3 class="you-deserve-subtitle">GLUTEN FREE</h3>
                 </div>
@@ -78,30 +78,27 @@
             <p class="primary-title">Ready for better?</p>
             <h5 class="sec-title">Organically sourced, lab-tested, premium Hemp</h5>
             <div class="btn-group">
-                <button class="group-btn selected-group-btn" id="500mg-btn" onclick="setCurrentOption(0)">500mg</button>
-                <button class="group-btn" id="1000mg-btn" onclick="setCurrentOption(1)">1000mg</button>
-                <button class="group-btn" id="2000mg-btn" style="border-radius: 0px 8px 8px 0px;" onclick="setCurrentOption(2)">2000mg</button>
+                <button class="group-btn g-1 selected-group-btn" id="500mg-btn" onclick="setCurrentOption(0)">500mg</button>
+                <button class="group-btn g-2" id="1000mg-btn" onclick="setCurrentOption(1)">1000mg</button>
+                <button class="group-btn g-3" id="2000mg-btn" style="border-radius: 0px 8px 8px 0px;" onclick="setCurrentOption(2)">2000mg</button>
             </div>
         </center>
 
-        <div class="row" style="margin-top: 112px;">
+        <div class="row" style="margin-top: 112px; margin-bottom: 120px;">
             <div class="col-12 col-md-6 col-xl-6 parte-slider">
                 <!--SLIDER-->
-
+                <!--
                 <div class="slider">
                     <div class="slide_viewer">
                         <div class="slide_group">
-                            <div class="slide">
-                            </div>
-                            <div class="slide">
-                            </div>
-                            <div class="slide">
-                            </div>
+                            <div class="slide">-->
+                                <img src="img/Base.png" id="productImage" alt="" srcset="" style="width: 100%; height: auto;">
+                            <!--</div>
                         </div>
                     </div>
-                </div>
-                <!-- End // .slider -->
-
+                </div>-->
+                <!-- End // .slider --> 
+                <!--
                 <div class="directional_nav">
                     <div class="previous_btn" title="Previous">
                         <img src="img/Icon-previous.png" alt="" srcset="">
@@ -110,6 +107,7 @@
                         <img src="img/Icon-next.png" alt="" srcset="">
                     </div>
                 </div>
+            -->
                 <!-- End // .directional_nav -->
 
             </div>
@@ -133,7 +131,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col"><!--
+                    <div class="col" style="margin-top: 20px;">
                         <div class="quantity">
                             <h6 id="little-title">Strength</h6>
                             <select id="strenght">
@@ -142,7 +140,6 @@
                                 <option value="2000mg" onclick="setCurrentOption(2)">2000mg</option>
                               </select>
                         </div>
-                        -->
                     </div>
                 </div>
                 <hr>
@@ -160,7 +157,7 @@
 
     <div class="container why-thrive">
         <div class="row">
-            <div class="col-12 col-md-6 col-xl-6"><img src="img/Rect-4.png" style="height: auto; width: 100%;" alt=""></div>
+            <div class="col-12 col-md-6 col-xl-6"><img src="img/Rect-4.png" style="height: auto; width: 100%; padding-top: 20px;" alt=""></div>
             <div class="col-12 col-md-6 col-xl-6 centramento-testo">
                 <h1 class="main-why-title">Why Thrive?</h1>
                 <p class="main-why-subtitle">good vibes, guaranteed</p>
@@ -260,7 +257,7 @@
     <div class="container">
         <div class="row" style="margin-top: 100px;">
             <div class="logo-box">
-                <img src="img/Thrive_Logo_01 1.png" alt="" srcset="">
+                <img src="img/Thrive_Logo_01 1.png" alt="" style="display: block; margin: 0 auto;" srcset="">
             </div>
         </div>
     </div>
@@ -277,24 +274,33 @@
         let optionsIDs = [012343241, 143546763, 154365722] // change this later
         let quantityCounter = 1
         let totalPrice = options[currentOption]
+        let productImage = document.getElementById('productImage')
+        let select = document.getElementById('strenght');
+        var selectOptions = select.options;
         let productDescriptions = {
             '0': {
                 title: 'KICKSTARTER',
-                description: 'Ease into finding your perfect dose with our entry-level 500mg - ideal for kickstarting your wellness journey. '
+                description: 'Ease into finding your perfect dose with our entry-level 500mg - ideal for kickstarting your wellness journey. ',
+                selectVal: '500mg',
+                productImage: './img/Base.png'
             },
             '1': {
                 title: 'THE ESSENTIAL',
-                description: 'Our 1000mg packs twice the punch in the same bottle. Reclaim your health with our most popular tincture-strength - an essential for your self-care routine'
+                description: 'Our 1000mg packs twice the punch in the same bottle. Reclaim your health with our most popular tincture-strength - an essential for your self-care routine',
+                selectVal: '1000mg',
+                productImage: './img/1000mg.png'
             },
             '2': {
                 title: 'LEVEL UP',
-                description: 'Our 2000mg tincture is our most potent option yet. Ideal for people who need that extra oomph to keep yourself on top form. Ready for better?'
+                description: 'Our 2000mg tincture is our most potent option yet. Ideal for people who need that extra oomph to keep yourself on top form. Ready for better?',
+                selectVal: '2000mg',
+                productImage: './img/2000mg.png'
             }
         }
 
         function minuscounter() {
             quantityCounter--
-            if (quantityCounter < 0) {
+            if (quantityCounter <= 0) {
                 quantityCounter++
             } else {
                 document.getElementById('ctr-display').innerHTML = quantityCounter
@@ -322,11 +328,20 @@
             }
             console.log(typeof value);
             currentOption = value
+            let selectVal = productDescriptions[currentOption]['selectVal']
             document.getElementById('productTitle').innerHTML = productDescriptions[currentOption]['title']
             document.getElementById('productDescriptions').innerHTML = productDescriptions[currentOption]['description']
             document.getElementById('ctr-display').innerHTML = 1
             totalPrice = options[currentOption]
             document.getElementById('total-price').innerHTML = "£" + totalPrice
+            productImage.src = productDescriptions[currentOption]['productImage'];
+
+            for (var opt, j = 0; opt = selectOptions[j]; j++) {
+                if (opt.value == selectVal) {
+                    select.selectedIndex = j;
+                    break;
+                }
+            }
 
             if (currentOption == 0) {
                 firstOption.classList.add('selected-group-btn')
@@ -341,13 +356,14 @@
         var AddToCartButton = $("#AddToCartButton")
 
         AddToCartButton.click(function() {
-            $.post('/cart/add.js', {
-                quantity: quantityCounter,
-                id: optionsIDs[currentOption],
-                properties: {
-                    'First name': 'Caroline' //change this later
-                }
-            });
+            if ( selectOptions[select.selectedIndex].value == '500mg' ) {
+                // location.replace("url")
+                alert("You are being redirected to the 500mg product version! (This is a development message, it will not appear in the live website)")
+            } else if ( selectOptions[select.selectedIndex].value == '1000mg' ) {
+                alert("You are being redirected to the 1000mg product version! (This is a development message, it will not appear in the live website)")
+            } else {
+                alert("You are being redirected to the 2000mg product version! (This is a development message, it will not appear in the live website)")
+            }
         });
         
     </script>
